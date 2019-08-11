@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@android:color/transparent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.CameraActivity">
+
+
+
+
+
+
+    <LinearLayout
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/cPreview"/>
+
+
+
+
+
+
+    <View
+        android:id="@+id/square"
+        android:layout_marginTop="66dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/square_border"
+        android:layout_width="300dp"
+        android:layout_height="300dp"/>
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:text="Please click the photo with your face inside the green border."
+        android:layout_below="@+id/square"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:weightSum="100"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center"
+        android:orientation="horizontal">
+
+        <Button
+            android:textColor="@color/white"
+            android:layout_margin="8dp"
+            android:background="@color/colorPrimary"
+            android:layout_weight="50"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/btnSwitch"
+            android:textSize="15sp"
+            android:text="Switch Camera"/>
+        <Button
+            android:textColor="@color/white"
+           android:layout_margin="8dp"
+            android:background="@color/colorPrimary"
+            android:layout_weight="50"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/btnCam"
+            android:textSize="15sp"
+            android:text="Take Photo"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

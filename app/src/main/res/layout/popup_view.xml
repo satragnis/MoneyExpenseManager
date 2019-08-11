@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:padding="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="56dp" />
+
+
+    <TextView
+        android:id="@+id/customer_name_et"
+        style="@style/EditText16sp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/profile_image"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/general_bordered_box"
+        android:gravity="center"
+        android:hint="Name" />
+
+
+    <TextView
+        android:id="@+id/customer_email_et"
+        style="@style/EditText16sp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/customer_name_et"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/general_bordered_box"
+        android:gravity="center"
+        android:hint="Email" />
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:background="@color/colorPrimary"
+        android:text="Done"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>
